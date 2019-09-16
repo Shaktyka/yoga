@@ -47,7 +47,8 @@ const watch = () => {
   browserSync.init({
     server: {
       baseDir: './'
-    }
+    },
+    tunnel: true
   });
   gulp.watch('./src/css/**/*.css', styles);
   gulp.watch('./src/js/**/*.js', scripts);
