@@ -3,6 +3,8 @@ const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
+const del = require('del');
+const browserSync = require('browser-sync').create();
 
 const cssFiles = [
   './src/css/normalize.css',
@@ -14,8 +16,6 @@ const jsFiles = [
   './src/js/main.js'
 ];
 
-// './src/css/**/*.css'
-
 const styles = () => {
   return gulp.src(cssFiles)
     .pipe(concat('style.css'))
@@ -25,7 +25,8 @@ const styles = () => {
     .pipe(cleanCSS({
       level: 2
     }))
-    .pipe(gulp.dest('./build/css'));
+    .pipe(gulp.dest('./build/css'))
+    .pipe(browserSync.stream());
 };
 
 const scripts = () => {
@@ -34,17 +35,34 @@ const scripts = () => {
     .pipe(uglify({
       toplevel: 3
     }))
-    .pipe(gulp.dest('./build/js'));
+    .pipe(gulp.dest('./build/js'))
+    .pipe(browserSync.stream());
+};
+
+const clean = () => {
+  return del(['build/*']);
 };
 
 const watch = () => {
+  browserSync.init({
+    server: {
+      baseDir: './'
+    }
+  });
   gulp.watch('./src/css/**/*.css', styles);
   gulp.watch('./src/js/**/*.js', scripts);
+  gulp.watch('./*.html', browserSync.reload);
 };
 
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
 gulp.task('watch', watch);
+gulp.task('clean', clean);
+
+gulp.task('build', gulp.series(clean,
+                                gulp.parallel(styles, scripts)));
+
+gulp.task('dev', gulp.series('build', watch));
 
 // var less = require("gulp-less");
 // var plumber = require("gulp-plumber");
