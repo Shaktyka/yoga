@@ -1,6 +1,51 @@
-"use strict";
+const gulp = require('gulp');
+const concat = require('gulp-concat');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+const uglify = require('gulp-uglify');
 
-// var gulp = require("gulp");
+const cssFiles = [
+  './src/css/normalize.css',
+  './src/css/stylesheet.css',
+  './src/css/style.css'
+];
+
+const jsFiles = [
+  './src/js/main.js'
+];
+
+// './src/css/**/*.css'
+
+const styles = () => {
+  return gulp.src(cssFiles)
+    .pipe(concat('style.css'))
+    .pipe(autoprefixer({
+      cascade: false
+    }))
+    .pipe(cleanCSS({
+      level: 2
+    }))
+    .pipe(gulp.dest('./build/css'));
+};
+
+const scripts = () => {
+  return gulp.src(jsFiles)
+    .pipe(concat('index.js'))
+    .pipe(uglify({
+      toplevel: 3
+    }))
+    .pipe(gulp.dest('./build/js'));
+};
+
+const watch = () => {
+  gulp.watch('./src/css/**/*.css', styles);
+  gulp.watch('./src/js/**/*.js', scripts);
+};
+
+gulp.task('styles', styles);
+gulp.task('scripts', scripts);
+gulp.task('watch', watch);
+
 // var less = require("gulp-less");
 // var plumber = require("gulp-plumber");
 // var postcss = require("gulp-postcss");

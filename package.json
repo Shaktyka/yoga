@@ -4,9 +4,14 @@
   "private": true,
   "description": "Адаптивный проект Yoga",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.x",
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "2.6.1",
+    "gulp-uglify": "^3.0.2",
     "stylelint": "9.2.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -18,7 +23,10 @@
   "browserslist": [
     "last 2 versions",
     "IE 11",
-    "Firefox ESR"
+    "Firefox ESR",
+    "> 0.2%",
+    "maintained node versions",
+    "not dead"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -31,6 +39,5 @@
   "engines": {
     "node": "11.00"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
