@@ -179,15 +179,136 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section>
+      <section class="team">
         <span class="screen-number">04</span>
-        <h2>Наша команда</h2>
+        <h2 class="team__title">Наша команда</h2>
+        <div class="team__slider slider">
+          <div class="slider__content">
+            <!-- Список карточек тренеров -->
+            <ul class="trainers__list">
+              <!-- 1 -->
+              <li class="trainers__item trainers__item--current trainer">
+                <p class="img-wrap">
+                  <img src="#" alt="Фотография инструктора">
+                </p>
+                <div class="trainer__info">
+                  <p class="trainer__name">
+                    Инструктор Серёжа Попов
+                  </p>
+                  <p class="trainer__branch">
+                    Хатха-йога
+                  </p>
+                  <ul class="trainer__socials socials">
+                    <li class="socials__item">
+                      <a href="#">
+                        VK
+                        <span class="v-hidden">VK</span>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a href="#">
+                        TW
+                        <span class="v-hidden">TW</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <a class="trainer__desc-link" href="#">Смотреть</a>
+                </div>
+              </li>
+            </ul>
+            <!-- Информация о тренере -->
+            <div class="trainer__desc">
+              <p class="trainer__exp">Опыт преподавания: 8 лет</p>
+              <div class="trainer__text">
+                <p>
+                  Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге. Большой опыт преподавания йоги для начинающих и продолжающих.
+                </p>
+                <p>
+                  Обучался в Индии (International Association of Yoga: classical yoga, master of principles yoga therapy), Непале (опыт медитативных и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога центр 108 А.Константинова), Московский центр классической йоги Виктора Бойко.
+                </p>
+                <p>
+                  Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу (Оздоровительный Витал – центр №401).
+                </p>
+                <p>
+                  Организатор и участник многочисленных конвенций и семинаров по йоге, медитативным техникам и здоровому питанию.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Контролы -->
+          <div class="slider__controls">
+            <button class="slider__btn slider__btn--prev" disabled>
+              <span>Предыдущий</span>
+            </button>
+            <p class="slider__count counter">
+              <span class="counter__current">1</span>/<span class="counter__all">9</span>
+            </p>
+            <button class="slider__btn slider__btn--next">
+              <span>Следущий</span>
+            </button>
+          </div>
+        </div>
       </section>
       <!-- Отзывы -->
-      <section>
+      <section class="reviews">
         <span class="screen-number">05</span>
-        <h2>Отзывы</h2>
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__slider slider">
+          <div class="slider__content">
+            <ul class="reviews__list">
+              <li class="review">
+                <div class="review__text">
+                  <p>Хожу на йогу вечером, чтобы расслабиться
+                    после тяжелого трудового дня. И после занятий
+                    наступает спокойствие!</p>
+                  <p>Йога это отличный способ быстро
+                    и качественно расслабиться.
+                    Спасибо инструктору Марине.</p>
+                </div>
+                <div class="review__author reviewer">
+                  <p class="img-wrap">
+                    <img class="reviewer__img" src="#" alt="Аватар автора отзыва">
+                  </p>
+                  <div class="reviewer__info">
+                    <h3 class="reviewer__name">Ссерёжа Попов</h3>
+                    <time datetime="2018-05-16">16 мая 2018</time>
+                    <ul class="reviewer__socials">
+                      <li class="socials__item">
+                        <a href="#">
+                          <span class="v-hidden">VK</span>
+                        </a>
+                      </li>
+                      <li class="socials__item">
+                        <a href="#">
+                          <span class="v-hidden">FB</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="review">
+              </li>
+            </ul>
+          </div>
+          <!-- Контролы -->
+          <div class="slider__controls">
+            <button class="slider__btn slider__btn--prev" disabled>
+              <span>Предыдущий</span>
+            </button>
+            <p class="slider__count counter">
+              <span class="counter__current">1</span>/<span class="counter__all">9</span>
+            </p>
+            <button class="slider__btn slider__btn--next">
+              <span>Следущий</span>
+            </button>
+          </div>
+        </div>
       </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
       <!-- Запись на занятия -->
       <section class="signup">
         <h2 class="signup__title">Запишитесь на бесплатное пробное занятие</h2>
@@ -203,10 +324,6 @@
           <button class="form__submit" type="submit">Оставить заявку</button>
         </form>
       </section>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="container">
       <ul class="footer__contacts contacts">
         <li class="contacts__item">
           <span>Адрес:</span>
