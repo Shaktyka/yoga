@@ -1,3 +1,93 @@
+/* Шрифты */
+
+/*@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/oswald/v24/TK3iWkUHHAIjg752HT8Ghe4.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}*/
+
+/* Общие стили */
+
+html,
 body {
-  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Geometria', Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #8E80A9;
+  text-transform: uppercase;
 }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-wrap {
+  display: flex;
+}
+
+.v-hidden,
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+        clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  outline: 1px solid gray;
+}
+
+/* Хедер */
+
+/*  */
+
+/*  */
+
+
+/*  */
+
+/* Футер */
