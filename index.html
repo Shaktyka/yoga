@@ -68,29 +68,98 @@
   <main class="main">
     <div class="container">
       <!-- Направления -->
-      <section>
-        <h2>Направления</h2>
-
+      <section class="branches">
+        <span class="screen-number">02</span>
+        <h2 class="branches__title">Направления</h2>
+        <div class="branches__content">
+          <!-- 1 -->
+          <article class="branches__branch branch">
+            <div class="img-wrap">
+              <img class="branch__img" src="./src/img/" alt="Направление Хатха-йога">
+            </div>
+            <div class="branch__info">
+              <h3 class="branch__title">Хатха-йога</h3>
+              <p class="branch__timetable">
+                Пн, Ср, Пт – с 12:00 до 15:00
+                Вт, Чт – с 18:00 до 21:00
+              </p>
+              <p class="branch__trainer">
+                <span>Инструктор</span>
+                Емельянова Полина
+              </p>
+              <a href="#">
+                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L9 7.5L1 14" stroke="white" />
+                </svg>
+                <span class="v-hidden">Перейти</span>
+              </a>
+            </div>
+          </article>
+          <div class="branches__wrap">
+            <!-- 2 -->
+            <article class="branches__branch branch">
+              <div class="img-wrap">
+                <img class="branch__img" src="./src/img/" alt="Направление Хатха-йога">
+              </div>
+              <div class="branch__info">
+                <h3 class="branch__title">Ашатанга-йога</h3>
+                <p class="branch__timetable">
+                  Пн, Ср, Пт – с 11:00 до 14:00
+                  Вт, Чт – с 19:00 до 21:00
+                </p>
+                <p class="branch__trainer">
+                  <span>Инструктор</span>
+                  Емельянова Полина
+                </p>
+                <a href="#">
+                  <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9 7.5L1 14" stroke="white" />
+                  </svg>
+                  <span class="v-hidden">Перейти</span>
+                </a>
+              </div>
+            </article>
+            <!-- 3 -->
+            <article class="branches__branch branch">
+              <div class="img-wrap">
+                <img class="branch__img" src="./src/img/" alt="Направление Хатха-йога">
+              </div>
+              <div class="branch__info">
+                <h3 class="branch__title">Кундалини-йога</h3>
+                <p class="branch__timetable">
+                  Пн, Ср, Пт – с 12:00 до 15:00
+                  Вт, Чт – с 18:00 до 21:00
+                </p>
+                <p class="branch__trainer">
+                  <span>Инструктор</span>
+                  Емельянова Полина
+                </p>
+                <a href="#">
+                  <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L9 7.5L1 14" stroke="white" />
+                  </svg>
+                  <span class="v-hidden">Перейти</span>
+                </a>
+              </div>
+            </article>
+            <a class="branches__link" href="#">Смотреть больше</a>
+          </div>
+        </div>
       </section>
       <!-- Абонементы -->
       <section>
+        <span class="screen-number">03</span>
         <h2>Абонементы</h2>
-
       </section>
       <!-- Наша команда -->
       <section>
+        <span class="screen-number">04</span>
         <h2>Наша команда</h2>
-
       </section>
       <!-- Отзывы -->
       <section>
+        <span class="screen-number">05</span>
         <h2>Отзывы</h2>
-
-      </section>
-      <!-- Отзывы -->
-      <section>
-        <h2>Отзывы</h2>
-
       </section>
       <!-- Запись на занятия -->
       <section class="signup">
@@ -111,7 +180,52 @@
   </main>
   <footer class="footer">
     <div class="container">
-
+      <ul class="footer__contacts contacts">
+        <li class="contacts__item">
+          <span>Адрес:</span>
+          Адрес: Московский проспект, 22
+        </li>
+        <li class="contacts__item">
+          <span>График работы:</span>
+          Пн-Вс с 11:00 до 21:00
+        </li>
+        <li class="contacts__item">
+          <span>Телефон:</span>
+          8 (812) 690-10-10
+        </li>
+        <li class="contacts__item">
+          <span>Email:</span>
+          yogaspb@gmail.com
+        </li>
+      </ul>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#">
+            vk
+            <span class="v-hidden">VK</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            tw
+            <span class="v-hidden">TW</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#">
+            fb
+            <span class="v-hidden">FB</span>
+          </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p class="copyright__text">
+          © 2018 Все права защищены
+        </p>
+        <p class="copyright__site">
+          Yogaspb.com
+        </p>
+      </div>
     </div>
   </footer>
   <script src="./build/js/index.js"></script>
