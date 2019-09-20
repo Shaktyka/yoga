@@ -8,7 +8,6 @@ const browserSync = require('browser-sync').create();
 
 const cssFiles = [
   './src/css/normalize.css',
-  './src/css/stylesheet.css',
   './src/css/style.css'
 ];
 
