@@ -96,10 +96,15 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+* {
+  outline: 1px solid gray;
+}
+
 .container {
   max-width: 320px;
   margin: 0 auto;
-  outline: 1px solid gray;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 h2 {
@@ -107,7 +112,43 @@ h2 {
   font-weight: 700;
 }
 
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
 /* ХЕДЕР */
+
+.header {
+  width: 100%;
+}
+
+.header .container {
+  padding-top: 18px;
+}
+
+/* Меню */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.menu__text {
+  display: none;
+}
+
+.menu__phone {
+  font-size: 10px;
+  font-weight: 500;
+  color: #8B7EAC;
+}
+
+/* Промо */
+
+
 
 /* НАПРАВЛЕНИЯ */
 

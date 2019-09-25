@@ -55,7 +55,7 @@ const watch = () => {
   });
   gulp.watch('./src/css/**/*.css', styles);
   gulp.watch('./src/js/**/*.js', scripts);
-  gulp.watch('./src/*.html', browserSync.reload);
+  gulp.watch('./*.html', browserSync.reload);
 };
 
 gulp.task('styles', styles);
@@ -68,3 +68,4 @@ gulp.task('build', gulp.series(clean,
                                 gulp.parallel(styles, fonts, scripts)));
 
 gulp.task('dev', gulp.series('build', watch));
+// для разработки запускать gulp dev

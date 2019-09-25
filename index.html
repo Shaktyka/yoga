@@ -11,18 +11,22 @@
 <body>
   <header class="header">
     <div class="container">
-      <div>
-        <button type="button">
-          <svg width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0.5H30M0 6.49948H30M0 12.5003H19.5" stroke="#8E80A9" />
-          </svg>
-          <span class="v-hidden">Меню</span>
-        </button>
-        <span>Меню</span>
-        <a href="tel:+78126901010" class="phone">
+      <div class="menu">
+        <!-- Меню -->
+        <div class="menu__wrap">
+          <button class="btn menu__btn" type="button">
+            <svg class="menu__icon" width="30" height="13" viewBox="0 0 30 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0.5H30M0 6.49948H30M0 12.5003H19.5" stroke="#8E80A9" />
+            </svg>
+            <span class="v-hidden">Меню</span>
+          </button>
+          <span class="menu__text">Меню</span>
+        </div>
+        <a class="menu__phone" href="tel:+78126901010" class="phone">
           8 (812) 690-10-10
         </a>
       </div>
+      <!-- Промо-блок -->
       <div class="promo">
         <span class="screen-number">01</span>
         <p class="promo__slogan">
