@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Geometria';
-  src: local('Geometria'),
-    url('../fonts/Geometria.woff') format('woff');
+  src: local('Geometria Regular'), local('Geometria-Regular'),
+    url('../fonts/Geometria-Regular.woff2') format('woff2');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
@@ -12,7 +12,7 @@
 @font-face {
   font-family: 'Geometria';
   src: local('Geometria Medium'), local('Geometria-Medium'),
-    url('../fonts/Geometria-Medium.woff') format('woff');
+    url('../fonts/Geometria-Medium.woff2') format('woff2');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -21,7 +21,7 @@
 @font-face {
   font-family: 'Geometria';
   src: local('Geometria Bold'), local('Geometria-Bold'),
-    url('../fonts/Geometria-Bold.woff') format('woff');
+    url('../fonts/Geometria-Bold.woff2') format('woff2');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -123,6 +123,6 @@ h2 {
 
 .footer .contacts {
   background-color: #8373A1;
-} 
+}
 
 /* Копирайт */
