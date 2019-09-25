@@ -33,6 +33,11 @@ const fonts = () => {
   .pipe(gulp.dest('./build/fonts'));
 };
 
+const images = () => {
+  return gulp.src('./src/img/**/*.{svg,png,jpg}')
+  .pipe(gulp.dest('./build/img'));
+};
+
 const scripts = () => {
   return gulp.src(jsFiles)
     .pipe(concat('index.js'))
@@ -60,12 +65,13 @@ const watch = () => {
 
 gulp.task('styles', styles);
 gulp.task('fonts', fonts);
+gulp.task('images', images);
 gulp.task('scripts', scripts);
 gulp.task('watch', watch);
 gulp.task('clean', clean);
 
 gulp.task('build', gulp.series(clean,
-                                gulp.parallel(styles, fonts, scripts)));
+                                gulp.parallel(styles, fonts, images, scripts)));
 
 gulp.task('dev', gulp.series('build', watch));
 // для разработки запускать gulp dev
