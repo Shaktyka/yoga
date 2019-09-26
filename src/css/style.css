@@ -117,6 +117,10 @@ h2 {
   border: none;
 }
 
+.screen-number {
+  display: none;
+}
+
 /* ХЕДЕР */
 
 .header {
@@ -168,10 +172,6 @@ h2 {
   align-items: center;
 }
 
-.promo .screen-number {
-  display: none;
-}
-
 .promo__slogan {
   margin-bottom: 20px;
 
@@ -221,6 +221,13 @@ h2 {
 }
 
 /* НАПРАВЛЕНИЯ */
+
+.branches__title {
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  text-align: center;
+}
 
 /* АБОНЕМЕНТЫ */
 
